@@ -13,7 +13,26 @@
     outline-offset: 2px;
     border-radius: 8px;
   }
-  </style>
+
+  .produto-imagem {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .produto-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 400px;
+  }
+
+  .produto-info {
+    margin-top: auto;
+  }
+</style>
   
 <body class="bg-white text-neutral-900">
 
@@ -65,168 +84,90 @@
   <div id="produtos" class="grid grid-cols-1 md:grid-cols-4 gap-6">
 
     <!-- Produto 1 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Base Líquida HD', 59.90)">
+    <div class="border p-4 rounded-xl hover:shadow-lg transition-shadow produto-card">
       <p class="text-xs bg-rose-100 text-rose-600 inline-block px-2 mb-2">Mais vendido 30% OFF</p>
-      <img src="https://via.placeholder.com/150" alt="Base Líquida HD">
-      <h3 class="font-semibold mt-2">Base Líquida HD</h3>
-      <p class="text-rose-600 font-bold">R$ 59,90 <span class="line-through text-sm text-neutral-500">R$ 89,90</span></p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+      <img src="./assets/baseliquidahd.jpeg" alt="Base Líquida HD" class="produto-imagem">
+      <div class="produto-info">
+        <h3 class="font-semibold mt-2">Base Líquida HD</h3>
+        <p class="text-rose-600 font-bold">R$ 59,90 <span class="line-through text-sm text-neutral-500">R$ 89,90</span></p>
+        <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+      </div>
     </div>
 
     <!-- Produto 2 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Paleta de Sombras Glam', 99.90)">
+    <div class="border p-4 rounded-xl hover:shadow-lg transition-shadow produto-card">
       <p class="text-xs bg-rose-100 text-rose-600 inline-block px-2 mb-2">Lançamento 20% OFF</p>
-      <img src="https://via.placeholder.com/150" alt="Paleta de Sombras Glam">
-      <h3 class="font-semibold mt-2">Paleta de Sombras Glam</h3>
-      <p class="text-rose-600 font-bold">R$ 99,90 <span class="line-through text-sm text-neutral-500">R$ 124,90</span></p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+      <img src="./assets/Paleta de Sombras Glam.jpeg" alt="Paleta de Sombras Glam" class="produto-imagem">
+      <div class="produto-info">
+        <h3 class="font-semibold mt-2">Paleta de Sombras Glam</h3>
+        <p class="text-rose-600 font-bold">R$ 99,90 <span class="line-through text-sm text-neutral-500">R$ 124,90</span></p>
+        <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+      </div>
     </div>
 
     <!-- Produto 3 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Kit Pincéis Profissionais', 149.90)">
+    <div class="border p-4 rounded-xl hover:shadow-lg transition-shadow produto-card">
       <p class="text-xs bg-rose-100 text-rose-600 inline-block px-2 mb-2">Frete grátis</p>
-      <img src="https://via.placeholder.com/150" alt="Kit Pincéis Profissionais">
-      <h3 class="font-semibold mt-2">Kit Pincéis Profissionais</h3>
-      <p class="text-rose-600 font-bold">R$ 149,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+      <img src="./assets/pinceis.jpeg" alt="Kit Pincéis Profissionais" class="produto-imagem">
+      <div class="produto-info">
+        <h3 class="font-semibold mt-2">Kit Pincéis Profissionais</h3>
+        <p class="text-rose-600 font-bold">R$ 149,90</p>
+        <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+      </div>
     </div>
 
     <!-- Produto 4 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Delineador Líquido Preto', 34.90)">
+    <div class="border p-4 rounded-xl hover:shadow-lg transition-shadow produto-card">
       <p class="text-xs bg-rose-100 text-rose-600 inline-block px-2 mb-2">25% OFF</p>
-      <img src="https://via.placeholder.com/150" alt="Delineador Líquido Preto">
-      <h3 class="font-semibold mt-2">Delineador Líquido Preto</h3>
-      <p class="text-rose-600 font-bold">R$ 34,90 <span class="line-through text-sm text-neutral-500">R$ 45,90</span></p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+      <img src="./assets/Delineador Líquido Preto.jpeg" alt="Delineador Líquido Preto" class="produto-imagem">
+      <div class="produto-info">
+        <h3 class="font-semibold mt-2">Delineador Líquido Preto</h3>
+        <p class="text-rose-600 font-bold">R$ 34,90 <span class="line-through text-sm text-neutral-500">R$ 45,90</span></p>
+        <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+      </div>
     </div>
 
     <!-- Produto 5 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Máscara de Cílios Volume', 49.90)">
-      <img src="https://via.placeholder.com/150" alt="Máscara de Cílios Volume">
-      <h3 class="font-semibold mt-2">Máscara de Cílios Volume</h3>
-      <p class="text-rose-600 font-bold">R$ 49,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+    <div class="border p-4 rounded-xl hover:shadow-lg transition-shadow produto-card">
+      <img src="./assets/Máscara de Cílios Volume.jpeg" alt="Máscara de Cílios Volume" class="produto-imagem">
+      <div class="produto-info">
+        <h3 class="font-semibold mt-2">Máscara de Cílios Volume</h3>
+        <p class="text-rose-600 font-bold">R$ 49,90</p>
+        <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+      </div>
     </div>
 
     <!-- Produto 6 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Batom Matte Vermelho', 29.90)">
-      <img src="https://via.placeholder.com/150" alt="Batom Matte Vermelho">
-      <h3 class="font-semibold mt-2">Batom Matte Vermelho</h3>
-      <p class="text-rose-600 font-bold">R$ 29,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+    <div class="border p-4 rounded-xl hover:shadow-lg transition-shadow produto-card">
+      <img src="./assets/Batom Matte Vermelho.jpeg" alt="Batom Matte Vermelho" class="produto-imagem">
+      <div class="produto-info">
+        <h3 class="font-semibold mt-2">Batom Matte Vermelho</h3>
+        <p class="text-rose-600 font-bold">R$ 29,90</p>
+        <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+      </div>
     </div>
 
     <!-- Produto 7 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Iluminador Glow Up', 39.90)">
-      <img src="https://via.placeholder.com/150" alt="Iluminador Glow Up">
-      <h3 class="font-semibold mt-2">Iluminador Glow Up</h3>
-      <p class="text-rose-600 font-bold">R$ 39,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+    <div class="border p-4 rounded-xl hover:shadow-lg transition-shadow produto-card">
+      <img src="./assets/Iluminador Glow Up.jpeg" alt="Iluminador Glow Up" class="produto-imagem">
+      <div class="produto-info">
+        <h3 class="font-semibold mt-2">Iluminador Glow Up</h3>
+        <p class="text-rose-600 font-bold">R$ 39,90</p>
+        <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+      </div>
     </div>
 
     <!-- Produto 8 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Corretivo Alta Cobertura', 32.90)">
-      <img src="https://via.placeholder.com/150" alt="Corretivo Alta Cobertura">
-      <h3 class="font-semibold mt-2">Corretivo Alta Cobertura</h3>
-      <p class="text-rose-600 font-bold">R$ 32,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+    <div class="border p-4 rounded-xl hover:shadow-lg transition-shadow produto-card">
+      <img src="./assets/Corretivo Alta Cobertura.jpeg" alt="Corretivo Alta Cobertura" class="produto-imagem">
+      <div class="produto-info">
+        <h3 class="font-semibold mt-2">Corretivo Alta Cobertura</h3>
+        <p class="text-rose-600 font-bold">R$ 32,90</p>
+        <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
+      </div>
     </div>
 
-    <!-- Produto 9 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Blush Natural', 27.90)">
-      <img src="https://via.placeholder.com/150" alt="Blush Natural">
-      <h3 class="font-semibold mt-2">Blush Natural</h3>
-      <p class="text-rose-600 font-bold">R$ 27,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
-    </div>
-
-    <!-- Produto 10 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Primer Facial', 49.90)">
-      <img src="https://via.placeholder.com/150" alt="Primer Facial">
-      <h3 class="font-semibold mt-2">Primer Facial</h3>
-      <p class="text-rose-600 font-bold">R$ 49,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
-    </div>
-
-    <!-- Produto 11 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Sombra Líquida Rose', 36.90)">
-      <img src="https://via.placeholder.com/150" alt="Sombra Líquida Rose">
-      <h3 class="font-semibold mt-2">Sombra Líquida Rose</h3>
-      <p class="text-rose-600 font-bold">R$ 36,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
-    </div>
-
-    <!-- Produto 12 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Gloss Labial', 24.90)">
-      <img src="https://via.placeholder.com/150" alt="Gloss Labial">
-      <h3 class="font-semibold mt-2">Gloss Labial</h3>
-      <p class="text-rose-600 font-bold">R$ 24,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
-    </div>
-
-    <!-- Produto 13 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Paleta Contorno e Iluminador', 89.90)">
-      <img src="https://via.placeholder.com/150" alt="Paleta Contorno e Iluminador">
-      <h3 class="font-semibold mt-2">Paleta Contorno e Iluminador</h3>
-      <p class="text-rose-600 font-bold">R$ 89,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
-    </div>
-
-    <!-- Produto 14 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Fixador de Maquiagem', 39.90)">
-      <img src="https://via.placeholder.com/150" alt="Fixador de Maquiagem">
-      <h3 class="font-semibold mt-2">Fixador de Maquiagem</h3>
-      <p class="text-rose-600 font-bold">R$ 39,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
-    </div>
-
-    <!-- Produto 15 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Lápis de Olho Preto', 19.90)">
-      <img src="https://via.placeholder.com/150" alt="Lápis de Olho Preto">
-      <h3 class="font-semibold mt-2">Lápis de Olho Preto</h3>
-      <p class="text-rose-600 font-bold">R$ 19,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
-    </div>
-
-    <!-- Produto 16 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Lápis de Boca Nude', 17.90)">
-      <img src="https://via.placeholder.com/150" alt="Lápis de Boca Nude">
-      <h3 class="font-semibold mt-2">Lápis de Boca Nude</h3>
-      <p class="text-rose-600 font-bold">R$ 17,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
-    </div>
-
-    <!-- Produto 17 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Esponja Blender', 14.90)">
-      <img src="https://via.placeholder.com/150" alt="Esponja Blender">
-      <h3 class="font-semibold mt-2">Esponja Blender</h3>
-      <p class="text-rose-600 font-bold">R$ 14,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
-    </div>
-
-    <!-- Produto 18 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Sérum Facial Hidratante', 69.90)">
-      <img src="https://via.placeholder.com/150" alt="Sérum Facial Hidratante">
-      <h3 class="font-semibold mt-2">Sérum Facial Hidratante</h3>
-      <p class="text-rose-600 font-bold">R$ 69,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
-    </div>
-
-    <!-- Produto 19 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Batom Líquido Nude', 29.90)">
-      <img src="https://via.placeholder.com/150" alt="Batom Líquido Nude">
-      <h3 class="font-semibold mt-2">Batom Líquido Nude</h3>
-      <p class="text-rose-600 font-bold">R$ 29,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
-    </div>
-
-    <!-- Produto 20 -->
-    <div class="border p-4 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" onclick="selecionarProduto('Gel para Sobrancelhas', 24.90)">
-      <img src="https://via.placeholder.com/150" alt="Gel para Sobrancelhas">
-      <h3 class="font-semibold mt-2">Gel para Sobrancelhas</h3>
-      <p class="text-rose-600 font-bold">R$ 24,90</p>
-      <button class="w-full bg-rose-600 text-white py-2 rounded-xl mt-2">Adicionar</button>
-    </div>
+   
 
   </div>
 </section>
